@@ -1,0 +1,184 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.icono {
+    text-align: center;
+
+    img {
+        height: 10rem;
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+@include m.tablet {
+    .iconos-nosotros {
+        @include m.grid(3, 2rem)
+    }
+
+    .contenedor-anuncios {
+        @include m.grid(3, 2rem)
+    }
+}
+
+.anuncio {
+    background-color: lighten( v.$gris, 5 );
+    background-color: darken( v.$gris, 10 );
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .contenedor-anuncio {
+        padding: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h3, p {
+        margin: 0;
+    }
+
+    .precio {
+        color: v.$verde;
+        font-weight: v.$bold;
+        font-size: 2.5rem;
+    }
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+        flex: 1;
+        display: flex;
+
+        img {
+            flex: 0 0 3rem;
+            margin-right: .5rem;
+        }
+    }
+}
+
+/*---------------APARTADO CONTACTAR---------------*/
+
+.imagen-contacto {
+    background-image: url(../../img/encuentra.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: v.$separacion 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 { 
+        color: v.$blanco;
+        font-weight: v.$black; 
+        font-size: 3.5rem;
+    }
+    p {
+        color: v.$blanco;
+        font-size: 1.8rem;
+    }
+}
+
+/*---------------APARTADO CONTACTAR---------------*/
+
+/*---------------APARTADO NUESTRO BLOG---------------*/
+
+@include m.tablet {
+    .seccion-inferior {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.entrada-blog {
+    margin-bottom: 2rem;
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.informacion-meta {
+    span {
+        color: v.$amarillo;
+    }
+}
+
+.texto-entrada {
+
+    a {
+        margin-top: 2rem;
+        display: block;
+        @include m.tablet {
+            margin-top: 0;
+        }
+    }
+    h4 {
+        color: v.$negro;
+        line-height: 1.4;
+        margin: 0;
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: v.$verde;
+            margin-top: 1rem;
+        }
+    }
+}
+
+/*---------------APARTADO NUESTRO BLOG / TESTIMONIALES---------------*/
+
+.testimonial {
+    background-color: v.$verde;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: v.$blanco;
+    border-radius: 2rem;
+
+    blockquote {
+        padding-left: 5rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url(../../img/comilla.svg);
+            background-repeat: no-repeat;
+            width: 6rem;
+            height: 8rem;
+            display: block;
+            //El elemento de arriba en este caso el blockquote debe tener el position relative para que este elemento se posicione de manera absoluta al blockquote. De lo contrario se posicionaria de manera absoluta al documento
+            position: absolute;
+            left: -2rem;
+        }
+    }
+    
+    p {
+        text-align: right;
+        color: v.$blanco;
+    }
+}
+
+/*---------------APARTADO NUESTRO BLOG / TESTIMONIALES---------------*/
+
+/*---------------APARTADO NUESTRO BLOG---------------*/
