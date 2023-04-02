@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.326e64e9.css",
+    "main.js": "/static/js/main.14b5485b.js",
+    "static/media/destacada3.jpg": "/static/media/destacada3.07d6236c19931dbb06a9.jpg",
+    "static/media/destacada2.jpg": "/static/media/destacada2.b17ad595ff879b454e38.jpg",
+    "static/media/destacada.jpg": "/static/media/destacada.3cd055bc7ead0a69ba74.jpg",
+    "static/media/Casa Antigua-1680291113700.jpeg": "/static/media/Casa Antigua-1680291113700.772f5b6d0460f3c0d4f7.jpeg",
+    "static/media/encuentra.jpg": "/static/media/encuentra.e021734e2a4e09b5a6c7.jpg",
+    "static/media/Casa en la Playa-1680285078452.jpeg": "/static/media/Casa en la Playa-1680285078452.03035806f1d5948b88f7.jpeg",
+    "static/media/nosotros.jpg": "/static/media/nosotros.e731dfc8bb59bc123853.jpg",
+    "static/media/header.jpg": "/static/media/header.8387de7577331aba3c9b.jpg",
+    "static/media/Casa Familiar-1680290819927.jpeg": "/static/media/Casa Familiar-1680290819927.3b11fbd7bc730cc01d70.jpeg",
+    "static/media/Casa Rustica con Pileta-1680290988856.jpeg": "/static/media/Casa Rustica con Pileta-1680290988856.c25955a74fdff087c3a1.jpeg",
+    "static/media/Casa Moderna-1680290873860.jpeg": "/static/media/Casa Moderna-1680290873860.8852693829f895d68ae4.jpeg",
+    "static/media/blog3.jpg": "/static/media/blog3.6218db874992d063c9d9.jpg",
+    "static/media/Departamento en el Puerto-1680291062560.jpeg": "/static/media/Departamento en el Puerto-1680291062560.59939840c19b74d0b545.jpeg",
+    "static/media/blog2.jpg": "/static/media/blog2.ea21539bcf6924876211.jpg",
+    "static/media/blog1.jpg": "/static/media/blog1.f46f00f2d3d848c71821.jpg",
+    "static/media/blog4.jpg": "/static/media/blog4.530d924b7e5c7383c9bd.jpg",
+    "static/media/logo.svg": "/static/media/logo.8da51d70ab90a75ab2b6.svg",
+    "static/media/icono2.svg": "/static/media/icono2.bbfcb05ca0a4f9581dafc5c63dbb63b4.svg",
+    "static/media/icono_estacionamiento.svg": "/static/media/icono_estacionamiento.ca9f73e6acd5230d3466268838b0c525.svg",
+    "static/media/icono1.svg": "/static/media/icono1.e2628a4129dd2d827ce74b87b6ea1937.svg",
+    "static/media/icono_dormitorio.svg": "/static/media/icono_dormitorio.3ef9d9fcd19a99e8fe76434da98f0a45.svg",
+    "static/media/comilla.svg": "/static/media/comilla.5f493495ee8d1a55d0c9.svg",
+    "static/media/barras.svg": "/static/media/barras.e4a5ab35e2693aa2ff4b946c697bfdcb.svg",
+    "static/media/icono_wc.svg": "/static/media/icono_wc.a6fb3007bbf34e5386ac68d04925d70c.svg",
+    "static/media/icono3.svg": "/static/media/icono3.5346653619b20a8a7dd92707638ad2e7.svg",
+    "static/media/dark-mode.svg": "/static/media/dark-mode.9e4982981d5c023cf884105dca5835b6.svg",
+    "index.html": "/index.html",
+    "main.326e64e9.css.map": "/static/css/main.326e64e9.css.map",
+    "main.14b5485b.js.map": "/static/js/main.14b5485b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.326e64e9.css",
+    "static/js/main.14b5485b.js"
+  ]
+}
