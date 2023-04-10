@@ -81,7 +81,7 @@ function AdminInicio() {
                                     <td>${propiedad.precio}</td>
                                     <td>
                                         <button onClick={handleDelete} refid={propiedad.id} className="boton-rojo-block boton-eliminar">Eliminar</button>
-                                        <Link to={`/#/admin/actualizar?id=${propiedad.id}`} className="boton-amarillo-block">Actualizar</Link>
+                                        <Link to={`/admin/actualizar?id=${propiedad.id}`} className="boton-amarillo-block">Actualizar</Link>
                                     </td>
                                 </tr>
                             })
