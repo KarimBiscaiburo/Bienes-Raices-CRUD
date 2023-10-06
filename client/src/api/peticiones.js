@@ -1,6 +1,6 @@
 export async function crearPeticion (dataForm) {
 
-    await fetch("https://bienes-raices-crud-production.up.railway.app/data", {
+    await fetch("http://localhost:4000/data", {
         method: "POST",
         body: dataForm
     })
@@ -11,7 +11,7 @@ export async function crearPeticion (dataForm) {
 
 export async function obtenerPropiedadesPeticion () {
 
-    const response = await fetch("https://bienes-raices-crud-production.up.railway.app/data", {
+    const response = await fetch("http://localhost:4000/data", {
         method: "GET",
     })
         .then ( res => res.json() )
@@ -21,7 +21,7 @@ export async function obtenerPropiedadesPeticion () {
 
 export async function obtenerPropiedadesPeticionLimit () {
 
-    const response = await fetch(`https://bienes-raices-crud-production.up.railway.app/data-limit`, {
+    const response = await fetch(`http://localhost:4000/data-limit`, {
         method: "GET",
     })
         .then ( res => res.json() )
@@ -31,7 +31,7 @@ export async function obtenerPropiedadesPeticionLimit () {
 
 export async function obtenerPropiedadPeticion (id) {
 
-    const response = await fetch(`https://bienes-raices-crud-production.up.railway.app/data/${id}`, {
+    const response = await fetch(`http://localhost:4000/data/${id}`, {
         method: "GET",
     })
         .then ( res => res.json() )
@@ -41,7 +41,7 @@ export async function obtenerPropiedadPeticion (id) {
 
 export async function obtenerVendedoresPeticion () {
 
-    const resultado = await fetch("https://bienes-raices-crud-production.up.railway.app/vendedores", {
+    const resultado = await fetch("http://localhost:4000/vendedores", {
         method: "GET",
     })
         .then( response => response.json() )
@@ -52,7 +52,7 @@ export async function obtenerVendedoresPeticion () {
 
 export async function actualizarPeticion (dataForm ,id) {
 
-    const resultado = await fetch(`https://bienes-raices-crud-production.up.railway.app/data/${id}`, {
+    const resultado = await fetch(`http://localhost:4000/data/${id}`, {
         method: "PUT",
         body: dataForm,
     })
@@ -65,7 +65,7 @@ export async function actualizarPeticion (dataForm ,id) {
 
 export async function eliminarPeticion (id, propiedad) {
     
-    const resultado = await fetch(`https://bienes-raices-crud-production.up.railway.app/data/${id}`, {
+    const resultado = await fetch(`http://localhost:4000/data/${id}`, {
         method: "DELETE",
         body: JSON.stringify(propiedad),
         headers : {
@@ -78,8 +78,8 @@ export async function eliminarPeticion (id, propiedad) {
     return resultado; 
 }
 
-export async function obtenerUsuarioPeticion (usuario) {
-    const resultado = await fetch("https://bienes-raices-crud-production.up.railway.app/user", {
+export async function obtenerUsuarioPeticion () {
+    const resultado = await fetch("http://localhost:4000/user", {
         method: "GET",
     })
         .then( response => response.json() )
